@@ -6,8 +6,7 @@ multi-label数据集；
 3，数据预处理，data_analysis.py，data_reduce.py，主要是针对multi-label数据集，经过统计，所有的数据量大概是不到6000条，
 所有的分类号加起来一共是3500多条，数据量的严重缺乏导致做多标签分类是不太可能的，因此对数据做了简化，统计每个标签出现的次数，对于出现次数少于50次的标签，直接
 在每条数据对应的标签列表中删去，简化后的标签个数为24类，大大减少了标签数量，因此这个项目只能是作为一个实验，处理后的数据在data/reduce_data下；
-4，模型训练，model_train.py，模型借鉴了很多jclian91大神的代码，https://www.cnblogs.com/jclian91/p/12671879.html，
-忘了他的git项目地址，如果有违反规则的地方，请jclian91联系我，liverpoolkopxiaoli@163.com
+4，模型训练，model_train.py，模型借鉴了很多jclian91大神的代码，受益良多，如果有违反规则的地方，请jclian91联系我，liverpoolkopxiaoli@163.com
 5，模型预测：model_predict.py；
 6，其余test开头的.py文件是用来测试中间代码的，可忽略；
 7，部分结果：
